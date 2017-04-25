@@ -1,0 +1,49 @@
+.day-theme {
+  background-color: #7ec0ee;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.night-theme {
+  background-color: #131862;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Fjalla One', sans-serif;
+  color: #fefcd7;
+}
+
+.main {
+  text-align: center;
+}
+
+.day_header {
+  font-size: 5em;
+  margin-top: 100px;
+}
+
+.night_header {
+  font-size: 5em;
+  margin-top: 100px;
+}
+
+.day-btn {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-size: 1.5em;
+  font-family: 'Fjalla One', sans-serif;
+  margin-top: 100px;
+}
+
+.night-btn {
+  background-color: #131862;
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-size: 1.5em;
+  font-family: 'Fjalla One', sans-serif;
+  margin-top: 100px;
+  color: #fefcd7;
+}
