@@ -1,6 +1,6 @@
 .day-theme {
   background-color: #7ec0ee;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 100%;
   font-family: 'Fjalla One', sans-serif;
@@ -8,7 +8,7 @@
 
 .night-theme {
   background-color: #131862;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 100%;
   font-family: 'Fjalla One', sans-serif;

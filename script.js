@@ -10,6 +10,7 @@ if (isNaN(pageVisits)) {
 } else {
   pageVisits += 1
 }
+
 // Set page visits in localStorage
 window.localStorage.setItem('pageVisits', pageVisits)
 visits.textContent = pageVisits
@@ -17,6 +18,7 @@ visits.textContent = pageVisits
 if (storedTheme === null) {
   window.localStorage.setItem('storedTheme', 'day')
 }
+
 // Change theme on button click
 function changeTheme () {
   if (window.localStorage.getItem('storedTheme') === 'day') {
