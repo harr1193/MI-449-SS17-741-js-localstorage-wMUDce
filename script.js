@@ -17,6 +17,7 @@ visits.textContent = pageVisits
 
 if (storedTheme === null) {
   window.localStorage.setItem('storedTheme', 'day')
+  document.body.setAttribute('class', 'day-theme')
 }
 
 // Change theme on button click
