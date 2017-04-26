@@ -1,4 +1,4 @@
-#theme {
+.day-theme {
   background-color: #7ec0ee;
   margin: 0;
   padding: 0;
@@ -6,7 +6,16 @@
   font-family: 'Fjalla One', sans-serif;
 }
 
-#main {
+.night-theme {
+  background-color: #131862;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Fjalla One', sans-serif;
+  color: #fefcd7;
+}
+
+.main {
   text-align: center;
 }
 

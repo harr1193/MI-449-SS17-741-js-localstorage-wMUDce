@@ -1,7 +1,6 @@
 var visits = document.getElementById('visits')
 var pageVisits = parseInt(window.localStorage.getItem('pageVisits'))
-var theme = document.getElementById('theme')
-var header = document.getElementById('header')
+var header = document.getElementById('timeOfDay')
 var button = document.getElementById('btn')
 var storedTheme = window.localStorage.getItem('storedTheme')
 
@@ -22,10 +21,9 @@ if (storedTheme === null) {
 function changeTheme () {
   if (window.localStorage.getItem('storedTheme') === 'day') {
     // Change body style to night theme
-    theme.style.backgroundColor = '#131862'
-    theme.style.color = '#fefcd7'
+    document.body.setAttribute('class', 'night-theme')
     // Change header content
-    header.innerHTML = 'Night Theme'
+    header.innerHTML = 'Night'
     // Change button to night theme
     button.style.backgroundColor = '#131862'
     button.style.color = '#fefcd7'
@@ -33,10 +31,9 @@ function changeTheme () {
     window.localStorage.setItem('storedTheme', 'night')
   } else if (window.localStorage.getItem('storedTheme') === 'night') {
     // Change body to day theme
-    theme.style.backgroundColor = '#7ec0ee'
-    theme.style.color = '#000'
+    document.body.setAttribute('class', 'day-theme')
     // Change header text content
-    header.innerHTML = 'Day Theme'
+    header.innerHTML = 'Day'
     // Change button to day theme
     button.style.backgroundColor = '#fff'
     button.style.color = '#000'
