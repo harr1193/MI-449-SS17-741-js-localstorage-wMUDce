@@ -31,4 +31,25 @@
   font-size: 1.5em;
   font-family: 'Fjalla One', sans-serif;
   margin-top: 100px;
+  color: #000;
+}
+
+.day-theme-button {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-size: 1.5em;
+  font-family: 'Fjalla One', sans-serif;
+  margin-top: 100px;
+  color: #000;
+}
+
+.night-theme-button {
+  background-color: #131862;
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-size: 1.5em;
+  font-family: 'Fjalla One', sans-serif;
+  margin-top: 100px;
+  color: #fefcd7;
 }
