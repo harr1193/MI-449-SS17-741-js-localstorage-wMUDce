@@ -21,20 +21,14 @@ if (storedTheme === null) {
 }
 
 window.onload = function setTheme () {
-  if (window.localStorage.getItem('storedTheme') === 'day') {
-    // Change body style to night theme
+  if (storedTheme === 'night') {
     document.body.setAttribute('class', 'night-theme')
-    // Change header content
     header.innerHTML = 'Night'
-    // Change button to night theme
     button.style.backgroundColor = '#131862'
     button.style.color = '#fefcd7'
-  } else if (window.localStorage.getItem('storedTheme') === 'night') {
-    // Change body to day theme
+  } else if (storedTheme === 'day') {
     document.body.setAttribute('class', 'day-theme')
-    // Change header text content
     header.innerHTML = 'Day'
-    // Change button to day theme
     button.style.backgroundColor = '#fff'
     button.style.color = '#000'
   }
