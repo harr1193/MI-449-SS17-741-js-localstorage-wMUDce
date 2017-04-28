@@ -24,13 +24,11 @@ window.onload = function setTheme () {
   if (storedTheme === 'night') {
     document.body.setAttribute('class', 'night-theme')
     header.innerHTML = 'Night'
-    button.style.backgroundColor = '#131862'
-    button.style.color = '#fefcd7'
+    button.className = 'night-theme-button'
   } else if (storedTheme === 'day') {
     document.body.setAttribute('class', 'day-theme')
     header.innerHTML = 'Day'
-    button.style.backgroundColor = '#fff'
-    button.style.color = '#000'
+    button.className = 'day-theme-button'
   }
 }
 
@@ -42,8 +40,7 @@ function changeTheme () {
     // Change header content
     header.innerHTML = 'Night'
     // Change button to night theme
-    button.style.backgroundColor = '#131862'
-    button.style.color = '#fefcd7'
+    button.className = 'night-theme-button'
     // Set theme in localStorage to night
     window.localStorage.setItem('storedTheme', 'night')
   } else if (window.localStorage.getItem('storedTheme') === 'night') {
@@ -52,9 +49,10 @@ function changeTheme () {
     // Change header text content
     header.innerHTML = 'Day'
     // Change button to day theme
-    button.style.backgroundColor = '#fff'
-    button.style.color = '#000'
+    button.className = 'day-theme-button'
     // Set theme in localStorage to day
     window.localStorage.setItem('storedTheme', 'day')
   }
 }
+
+button.addEventListener('click', changeTheme)
